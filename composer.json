@@ -1,0 +1,9 @@
+{
+    "name": "markbratanov/youtube-field_type",
+    "type": "streams-addon",
+    "autoload": {
+        "psr-4": {
+            "Markbratanov\\YoutubeFieldType\\": "src/"
+        }
+    }
+}

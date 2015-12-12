@@ -1,0 +1,15 @@
+{{ asset_add("scripts.js", "markbratanov.field_type.youtube::js/youtube.js") }}
+
+
+<input
+        id="direct_url"
+        type="text"
+        class="form-control"
+        name="{{ field_type.input_name }}"
+        value="{{ field_type.value }}"
+        placeholder="{{ trans(field_type.placeholder) }}"
+        {{ field_type.disabled ? 'disabled' }}
+        {{ field_type.readonly ? 'readonly' }}>
+
+
+<div id="player" style="height: {{ field_type.config.height }}; display: block; width:100%; text-align:center; margin: 0 auto; margin-top: 1em;"></div>
